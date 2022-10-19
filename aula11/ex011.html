@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Passaportes</title>
+    <style>
+        body {
+            color: rgb(255, 0, 0);
+            font: normal;
+            background: rgb(176, 217, 250);
+        }
+    </style>
+</head>
+<body>
+    <h1>Bem vindo ao Brasil!</h1>
+    De onde vôcê está vindo? <input type="text" id="txt1">
+    <input type="button" value="Confirmar" onclick="calcular()">
+    <div id="res">
+
+    </div>
+    <script>
+        function calcular(){
+            var país = document.querySelector('input#txt1')
+            var div = document.querySelector('div#res')
+            var resposta = (país.value)
+            
+
+            if (país != 'Brasil') {
+                res.innerHTML = `Você é estrangeiro! Bem vindo ao Brasil!`
+            } else{
+                res.innerHTML = `Bem vindo de volta!`
+            }
+            resposta.innerHTML = `Você veio da(o) país ${país}`
+        }
+    </script>
+</body>
+</html>
